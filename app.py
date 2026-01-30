@@ -5,7 +5,6 @@ import fitz
 # 設定
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-2.0-flash')
-
 st.title("📊 原価計算AIクイズ")
 f = st.file_uploader("PDFをアップロード", type="pdf")
 
